@@ -36,7 +36,8 @@ const std::vector<RadioChannel> channels{
     {"3 FM", "http://icecast.omroep.nl/3fm-bb-aac", false, {"3FM", "3fm", "3 FM", "3 fm"}},
     {"Radio 10", "http://www.radio10.nl/players/stream/radio10.asx", true, {"Radio10", "radio10", "Radio 10", "radio 10"}},
     {"Radio 538", "http://vip-icecast.538.lw.triple-it.nl/RADIO538_MP3.m3u", true, {"Radio 538", "radio 538", "Radio538", "radio538", "538"}},
-    {"Radio Veronica", "http://8543.live.streamtheworld.com/VERONICACMP3", false, {"Veronica", "veronica"}}
+    {"Radio Veronica", "http://8543.live.streamtheworld.com/VERONICACMP3", false, {"Veronica", "veronica"}},
+    {"Radio 2", "http://icecast.omroep.nl/radio2-bb-aac", false, {"Radio 2", "Radio2", "radio 2", "radio2"}}
 };
 
 PlayerAdaptor::PlayerAdaptor(QString choose, QObject *parent): QDBusAbstractAdaptor(parent), playing(false), index(0) {
