@@ -189,7 +189,7 @@ void PlayerAdaptor::notifySwitch(bool isSwitching) {
     }
     args << QStringList{}; //actions
     args << QVariantMap{}; //hints
-    args << (int) 5; //timeout
+    args << (int) 5000; //timeout
 
     QDBusMessage message = QDBusMessage::createMethodCall("org.freedesktop.Notifications", "/org/freedesktop/Notifications",
                                                           "org.freedesktop.Notifications", "CloseNotification");
