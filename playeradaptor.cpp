@@ -126,7 +126,7 @@ void PlayerAdaptor::Stop() {
     if (!playing) return;
     if (!process) return;
     disconnect(process, SIGNAL(finished(int)), this, SLOT(finishedMplayer()));
-    process->kill();
+    process->terminate();
     process = nullptr;
     playing = false;
     notifyChanges();
